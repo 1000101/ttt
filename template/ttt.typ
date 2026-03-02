@@ -12,6 +12,7 @@
   abstract_2: [],
   language: "en",
   city: [],
+  advisor_title: [Advisor],
   advisor: [],
   date: datetime.today().display("[year]"),
   doc,
@@ -139,7 +140,7 @@
           size: 12pt,
           font: "Latin Modern Roman Caps",
           weight: "medium",
-          smallcaps(all: true)[ Vedúci práce:  #advisor])
+          smallcaps(all: true)[ #advisor_title: #advisor])
       )
 
 

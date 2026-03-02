@@ -1,6 +1,6 @@
-#import "template/thetis.typ": thetis, customquote
+#import "template/ttt.typ": ttt, customquote
 
-#show: thetis.with(
+#show: ttt.with(
   uni:[Universal University], // name of the institution / uni
   fac:[ Le Fac ],
   dept:[ Department of departures],
@@ -13,9 +13,10 @@
   language: "en", // if not specified, then en will be used, possible: "en", "fr", "cs", "sk", ...
   abstract_title_2:[Abstract],
   abstract_2:[ #lorem(80) ],
- city: "Prague",
- advisor: "prof. PhDr. Prof Essor, Ph.D."
- //date:[] // if not specified, then current date will be used, use blank to blank out
+  city: "Prague",
+  advisor_title: [Advisor],
+  advisor: "prof. PhDr. Prof Essor, Ph.D."
+  //date:[] // if not specified, then current date will be used, use blank to blank out
 )
 
 #set text(
