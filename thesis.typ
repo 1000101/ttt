@@ -30,21 +30,30 @@
 
 
 = Introduction
-#lorem(80)
+#lorem(20)
 
 == Introduction Sub Quote
 #lorem(10)
 
 === Introduction Sub Sub Foot
-#lorem(20)
+#lorem(10)
 
-Nonclear#footnote[Something footnote-y] idea. Citation example.@zaretskySubversiveSimoneWeil2021[p. 45-55]
+Nonclear#footnote[Something footnote-y] idea. Attribution example.@book1[p. 45-55]
 
 = Blablah
-#lorem(40)
+#lorem(5)
 
 == Blablah Mathematica
 #lorem(20)
+
+Block article citation example:
+
+#quote(block:true)["this is interesting and not my idea"@article1[p. 69]]
+
+Another block quote inline attributed:
+
+#quote(block:true, attribution:[Int Erresant Author])["this is interesting and not my idea"]
+
 
 \
 
@@ -79,6 +88,8 @@ For more examples see footnote.#footnote[https://typst.app/docs/reference/math]
 ==== Blablah Sub3
 #lorem(20)
 
+#pagebreak()
+
 = Conclusion
 #lorem(80)
 
@@ -86,4 +97,4 @@ For more examples see footnote.#footnote[https://typst.app/docs/reference/math]
 #pagebreak()
 
 
-#bibliography("lib.bib", title:"Bibliography", style: "chicago-notes")
+#bibliography("library.bib", title:"Bibliography", style: "chicago-notes")
