@@ -84,7 +84,9 @@
         all: true,
       )[#fac])
       block(below: 1em)
-      text(size: 12pt, font: "Latin Modern Roman Caps", [#dept])
+      text(size: 12pt, font: "Latin Modern Roman Caps", smallcaps(
+        all: true,
+      )[#dept])
 
     },
   )
