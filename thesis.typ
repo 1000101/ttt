@@ -13,7 +13,7 @@
   language: "en", // if not specified, then en will be used, possible: "en", "fr", "cs", "sk", ...
   abstract_title_2:[Abstract],
   abstract_2:[ #lorem(80) ],
-  city: "Prague",
+  city: "Fiesole",
   advisor_title: [Advisor],
   advisor: [prof. PhDr. Prof Essor, Ph.D.],
   thanks:[Thanks everyone.],
