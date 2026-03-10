@@ -14,7 +14,12 @@
   city: [],
   advisor_title: [Advisor],
   advisor: [],
-  date: datetime.today().display("[year]"),
+  thanks: [],
+  thanks_title: [],
+  declaration: [],
+  declaration_title: [],
+  date: datetime.today().display("[day].[month].[year]"),
+  date_year: datetime.today().display("[year]"),
   doc,
 ) = {
   let lang = language;
@@ -129,7 +134,7 @@
           size: 12pt,
           font: "Latin Modern Roman Caps",
           weight: "medium",
-          smallcaps(all: true)[ #author \ \ #city, #date ])
+          smallcaps(all: true)[ #author \ \ #city, #date_year ])
       )
 
       block(
@@ -169,7 +174,50 @@
   // )
 
 
+  // thank you
+
   pagebreak()
+
+  place(
+    bottom + left, //  top + center //
+    float: true,
+    scope: "parent",
+    {
+      block(below: 1.5em, par()[
+        *#thanks_title*
+      ])
+      block( align(left, par(justify: true, leading: 0.75em,)[
+        #thanks
+      ]))
+    },
+  )
+
+
+
+  pagebreak()
+
+  place(
+    bottom + left, //  top + center //
+    {
+      block(below: 1.5em, par()[
+        *#declaration_title*
+      ])
+
+      block(below: 1.5em, par(justify: true, leading: 0.75em,)[
+        #declaration
+      ])
+
+    grid(
+        columns: (1fr, 1fr),
+        align: (left, right),
+        [ #city, #date], [#author],
+    )
+    }
+  )
+
+  pagebreak()
+
+  // abstract
 
   place(
     top + left, //  top + center //
